@@ -14,7 +14,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    lazy var game = Concentration(numberOfPairsOfCards: (cardButtons.count + 1) / 2) //lazy cannot have didSet, no property observer 
+    lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards) //lazy cannot have didSet, no property observer
+    
+    var numberOfPairsOfCards: Int {
+        //get{//readonly}
+        return (cardButtons.count + 1) / 2
+    }
+    
     var flipCount = 0 {
         //property observer: everytime the flipCount instance updates, execute the didSet and update the label.
         didSet {
@@ -46,7 +52,7 @@ class ViewController: UIViewController {
                 button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             } else {
                 button.setTitle("", for: UIControlState.normal)
-                button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0) : #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+                button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0) : #colorLiteral(red: 1, green: 0.5507493575, blue: 0.2537739333, alpha: 1)
             }
         }
     }
