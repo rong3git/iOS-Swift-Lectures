@@ -27,8 +27,8 @@ class ViewController: UIViewController {
             flipCountLabel.text = "Flips:\(flipCount)"
         }
     }
-    private var emojiChoices: Array<String> = ["🦄", "👻", "😈","👾","🎃","🎲"]
-    private var emoji = Dictionary<Int, String>() //[Int:String]()
+    private var emojiChoices: [String] = ["🦄", "👻", "😈","👾","🎃","🎲"]
+    private var emoji = [Int: String]() //Dictionary<Int, String>() 
     
     @IBOutlet private weak var flipCountLabel: UILabel!
     @IBOutlet private var cardButtons: [UIButton]!
