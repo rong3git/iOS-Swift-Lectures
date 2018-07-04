@@ -13,7 +13,7 @@ import UIKit
 // Swift - extremely type language
 
 class ViewController: UIViewController {
-    
+    //this means "only callable from within this object"
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards) //lazy cannot have didSet, no property observer
     
     var numberOfPairsOfCards: Int {
@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         return (cardButtons.count + 1) / 2
     }
     
+    //this means "this property is readable outside this object, but not settable."
     private(set) var flipCount = 0 {
         //property observer: everytime the flipCount instance updates, execute the didSet and update the label.
         didSet {
@@ -28,7 +29,7 @@ class ViewController: UIViewController {
         }
     }
     private var emojiChoices: [String] = ["🦄", "👻", "😈","👾","🎃","🎲"]
-    private var emoji = [Int: String]() //Dictionary<Int, String>() 
+    private var emoji = [Int: String]() //Dictionary<Int, String>()
     
     @IBOutlet private weak var flipCountLabel: UILabel!
     @IBOutlet private var cardButtons: [UIButton]!
