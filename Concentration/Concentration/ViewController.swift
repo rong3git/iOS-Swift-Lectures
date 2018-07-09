@@ -25,14 +25,28 @@ class ViewController: UIViewController {
     private(set) var flipCount = 0 {
         //property observer: everytime the flipCount instance updates, execute the didSet and update the label.
         didSet {
-            flipCountLabel.text = "Flips:\(flipCount)"
+            updateFlipCountLabel()
         }
     }
+    
+    private func updateFlipCountLabel() {
+        let attributes: [NSAttributedStringKey: Any] = [
+            .strokeWidth: 5.0,
+            .strokeColor: #colorLiteral(red: 1, green: 0.5507493575, blue: 0.2537739333, alpha: 1)
+        ]
+        let attributedString = NSAttributedString(string: "Flips:\(flipCount)", attributes: attributes)
+        flipCountLabel.attributedText = attributedString
+    }
+    
     //private var emojiChoices: [String] = ["🦄", "👻", "😈","👾","🎃","🎲"]
     private var emojiChoices = "🦄👻😈👾🎃🎲"
     private var emoji = [Card: String]() //Dictionary<Int, String>()
     
-    @IBOutlet private weak var flipCountLabel: UILabel!
+    @IBOutlet private weak var flipCountLabel: UILabel! {
+        didSet {
+            updateFlipCountLabel()
+        }
+    }
     @IBOutlet private var cardButtons: [UIButton]!
     
     @IBAction private func touchCard(_ sender: UIButton) {
