@@ -12,7 +12,7 @@ import UIKit
 // all instance variable called property - has to be initalize
 // Swift - extremely type language
 
-class ViewController: UIViewController {
+class ConcentrationViewController: UIViewController {
     //this means "only callable from within this object"
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards) //lazy cannot have didSet, no property observer
     
@@ -38,6 +38,14 @@ class ViewController: UIViewController {
         flipCountLabel.attributedText = attributedString
     }
     
+    var theme: String? {
+        didSet {
+            emojiChoices = theme ?? ""
+            emoji = [:] //empty dictionary
+            updateViewFromModel()
+        }
+    }
+    
     //private var emojiChoices: [String] = ["🦄", "👻", "😈","👾","🎃","🎲"]
     private var emojiChoices = "🦄👻😈👾🎃🎲"
     private var emoji = [Card: String]() //Dictionary<Int, String>()
@@ -60,15 +68,18 @@ class ViewController: UIViewController {
     }
     
     private func updateViewFromModel() {
-        for index in cardButtons.indices {
-            let button = cardButtons[index]
-            let card = game.cards[index]
-            if card.isFaceUp {
-                button.setTitle(emoji(for: card), for: UIControlState.normal)
-                button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-            } else {
-                button.setTitle("", for: UIControlState.normal)
-                button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0) : #colorLiteral(red: 1, green: 0.5507493575, blue: 0.2537739333, alpha: 1)
+        //control + i => auto format code
+        if cardButtons != nil {
+            for index in cardButtons.indices {
+                let button = cardButtons[index]
+                let card = game.cards[index]
+                if card.isFaceUp {
+                    button.setTitle(emoji(for: card), for: UIControlState.normal)
+                    button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+                } else {
+                    button.setTitle("", for: UIControlState.normal)
+                    button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0) : #colorLiteral(red: 1, green: 0.5507493575, blue: 0.2537739333, alpha: 1)
+                }
             }
         }
     }
