@@ -21,14 +21,7 @@ class PlayingCardView: UIView {
     
     var faceCardScale: CGFloat = SizeRatio.faceCardImageSizeToBoundsSize {didSet {setNeedsDisplay()}}
     
-    @objc func adjustFaceCardScale(byHandlingGuestureRecognizedBy recognizer:UIPinchGestureRecognizer) {
-        switch recognizer.state {
-        case .changed, .ended:
-            faceCardScale *= recognizer.scale
-            recognizer.scale = 1.0
-        default: break
-        }
-    }
+
     
     private func centeredAttributedString(_ string: String, fontSize: CGFloat) -> NSAttributedString {
         var font = UIFont.preferredFont(forTextStyle: .body).withSize(fontSize)
