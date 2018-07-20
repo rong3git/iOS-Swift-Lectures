@@ -13,6 +13,7 @@
 		A091639B20F4781B005530B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A091639A20F4781B005530B4 /* Assets.xcassets */; };
 		A091639E20F4781B005530B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A091639C20F4781B005530B4 /* LaunchScreen.storyboard */; };
 		A0AF32B320FAB4E900341F99 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF32B220FAB4E900341F99 /* PlayingCard.swift */; };
+		A0B490EA2101622C00294A92 /* CardBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B490E92101622C00294A92 /* CardBehavior.swift */; };
 		A0FA2F0420FB0DA3005A0110 /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA2F0320FB0DA3005A0110 /* PlayingCardDeck.swift */; };
 		A0FA2F0720FB5083005A0110 /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA2F0620FB5083005A0110 /* PlayingCardView.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		A091639D20F4781B005530B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A091639F20F4781B005530B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0AF32B220FAB4E900341F99 /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
+		A0B490E92101622C00294A92 /* CardBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBehavior.swift; sourceTree = "<group>"; };
 		A0FA2F0320FB0DA3005A0110 /* PlayingCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
 		A0FA2F0620FB5083005A0110 /* PlayingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 				A091639320F47819005530B4 /* AppDelegate.swift */,
 				A091639520F47819005530B4 /* ViewController.swift */,
 				A0FA2F0620FB5083005A0110 /* PlayingCardView.swift */,
+				A0B490E92101622C00294A92 /* CardBehavior.swift */,
 				A0FA2F0520FB5067005A0110 /* Models */,
 				A091639720F47819005530B4 /* Main.storyboard */,
 				A091639A20F4781B005530B4 /* Assets.xcassets */,
@@ -157,6 +160,7 @@
 				A0AF32B320FAB4E900341F99 /* PlayingCard.swift in Sources */,
 				A0FA2F0720FB5083005A0110 /* PlayingCardView.swift in Sources */,
 				A091639420F47819005530B4 /* AppDelegate.swift in Sources */,
+				A0B490EA2101622C00294A92 /* CardBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
