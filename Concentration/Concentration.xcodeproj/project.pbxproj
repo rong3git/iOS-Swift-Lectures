@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0A2A5402104182100E7F73B /* VCLLoggingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A2A53F2104182100E7F73B /* VCLLoggingViewController.swift */; };
 		A0B96D3320BA8883003CEF6F /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B96D3220BA8883003CEF6F /* Concentration.swift */; };
 		A0B96D3520BA8A1B003CEF6F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B96D3420BA8A1B003CEF6F /* Card.swift */; };
 		A0C6B22C20B9168E002EEB48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C6B22B20B9168E002EEB48 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0A2A53F2104182100E7F73B /* VCLLoggingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCLLoggingViewController.swift; sourceTree = "<group>"; };
 		A0B96D3220BA8883003CEF6F /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 		A0B96D3420BA8A1B003CEF6F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A0C6B22820B9168E002EEB48 /* Concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +75,7 @@
 				A0C6B22B20B9168E002EEB48 /* AppDelegate.swift */,
 				A0C6B22D20B9168E002EEB48 /* ConcentrationViewController.swift */,
 				A0E212C520FD85E30042807F /* ConcentrationThemeChooserViewController.swift */,
+				A0A2A53F2104182100E7F73B /* VCLLoggingViewController.swift */,
 				A0C6B22F20B9168E002EEB48 /* Main.storyboard */,
 				A0C6B23220B91690002EEB48 /* Assets.xcassets */,
 				A0C6B23420B91690002EEB48 /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A2A5402104182100E7F73B /* VCLLoggingViewController.swift in Sources */,
 				A0E212C620FD85E30042807F /* ConcentrationThemeChooserViewController.swift in Sources */,
 				A0C6B22E20B9168E002EEB48 /* ConcentrationViewController.swift in Sources */,
 				A0C6B22C20B9168E002EEB48 /* AppDelegate.swift in Sources */,

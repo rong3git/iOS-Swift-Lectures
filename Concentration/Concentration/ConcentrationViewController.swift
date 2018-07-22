@@ -12,7 +12,11 @@ import UIKit
 // all instance variable called property - has to be initalize
 // Swift - extremely type language
 
-class ConcentrationViewController: UIViewController {
+class ConcentrationViewController: VCLLoggingViewController {
+    override var vclLoggingName: String {
+        return "Game"
+    }
+
     //this means "only callable from within this object"
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards) //lazy cannot have didSet, no property observer
     
