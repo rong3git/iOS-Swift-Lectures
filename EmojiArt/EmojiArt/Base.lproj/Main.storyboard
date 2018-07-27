@@ -91,6 +91,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="jdA-bp-zBe"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -128,32 +131,8 @@
             </objects>
             <point key="canvasLocation" x="787.76978417266184" y="316.54676258992811"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="if4-BP-zfC">
-            <objects>
-                <tableViewController id="hKd-mV-NP9" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uXy-o2-DR2">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="1Oz-qH-VhF">
-                                <rect key="frame" x="0.0" y="28" width="1112" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Oz-qH-VhF" id="Oxx-Ae-pT9">
-                                    <rect key="frame" x="0.0" y="0.0" width="1112" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="hKd-mV-NP9" id="l2W-yi-vTG"/>
-                            <outlet property="delegate" destination="hKd-mV-NP9" id="hfW-Hi-q39"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P3w-nC-Jqi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jdA-bp-zBe"/>
+    </inferredMetricsTieBreakers>
 </document>
