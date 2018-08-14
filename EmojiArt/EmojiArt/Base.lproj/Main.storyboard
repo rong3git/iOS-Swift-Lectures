@@ -23,14 +23,20 @@
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqh-yg-fNS">
                                         <rect key="frame" x="0.0" y="0.0" width="791.5" height="814"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="250" constant="814" id="HsR-yq-KUq"/>
+                                            <constraint firstAttribute="width" priority="250" constant="791.5" id="tap-zy-jW7"/>
+                                        </constraints>
                                     </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="cqh-yg-fNS" secondAttribute="trailing" id="R17-DU-C6V"/>
-                                    <constraint firstAttribute="bottom" secondItem="cqh-yg-fNS" secondAttribute="bottom" id="VcZ-q5-bkZ"/>
-                                    <constraint firstItem="cqh-yg-fNS" firstAttribute="top" secondItem="ggS-Of-fxC" secondAttribute="top" id="WB6-MY-awb"/>
-                                    <constraint firstItem="cqh-yg-fNS" firstAttribute="leading" secondItem="ggS-Of-fxC" secondAttribute="leading" id="ciJ-n5-x3N"/>
+                                    <constraint firstItem="cqh-yg-fNS" firstAttribute="centerY" secondItem="ggS-Of-fxC" secondAttribute="centerY" id="Jod-BL-9I2"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cqh-yg-fNS" secondAttribute="trailing" id="R17-DU-C6V"/>
+                                    <constraint firstItem="cqh-yg-fNS" firstAttribute="centerX" secondItem="ggS-Of-fxC" secondAttribute="centerX" id="SGd-wo-naO"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cqh-yg-fNS" secondAttribute="bottom" id="VcZ-q5-bkZ"/>
+                                    <constraint firstItem="cqh-yg-fNS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ggS-Of-fxC" secondAttribute="top" id="WB6-MY-awb"/>
+                                    <constraint firstItem="cqh-yg-fNS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ggS-Of-fxC" secondAttribute="leading" id="ciJ-n5-x3N"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -46,6 +52,8 @@
                     <connections>
                         <outlet property="dropZone" destination="ggS-Of-fxC" id="r1g-Ha-LQQ"/>
                         <outlet property="scrollView" destination="cqh-yg-fNS" id="qdF-Y3-3Ba"/>
+                        <outlet property="scrollViewHeight" destination="HsR-yq-KUq" id="Pkr-VT-qN9"/>
+                        <outlet property="scrollViewWidth" destination="tap-zy-jW7" id="tqo-pK-ImC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
