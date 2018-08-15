@@ -75,6 +75,34 @@
                                             <outlet property="label" destination="2Ir-wE-fE6" id="9Yj-WS-Vd1"/>
                                         </connections>
                                     </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DropPlaceHolderCell" id="SFJ-at-cb5" customClass="EmojiCollectionViewCell" customModule="EmojiArt" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfY-iV-bCU">
+                                                    <rect key="frame" x="40" y="40" width="0.0" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="lXe-RX-hfb">
+                                                    <rect key="frame" x="30" y="30" width="20" height="20"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="tfY-iV-bCU" firstAttribute="centerX" secondItem="SFJ-at-cb5" secondAttribute="centerX" id="7ic-rv-UHZ"/>
+                                            <constraint firstItem="lXe-RX-hfb" firstAttribute="centerY" secondItem="SFJ-at-cb5" secondAttribute="centerY" id="SrG-fA-6KC"/>
+                                            <constraint firstItem="tfY-iV-bCU" firstAttribute="centerY" secondItem="SFJ-at-cb5" secondAttribute="centerY" id="gXe-yr-eRf"/>
+                                            <constraint firstItem="lXe-RX-hfb" firstAttribute="centerX" secondItem="SFJ-at-cb5" secondAttribute="centerX" id="qae-rb-E4l"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="label" destination="tfY-iV-bCU" id="TGi-ko-pBJ"/>
+                                        </connections>
+                                    </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
